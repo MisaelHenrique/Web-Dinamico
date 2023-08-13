@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 1 de exercicios</title>
+</head>
+<body>
+    <div class="content">
+        <div class="ex">
+            <div class="enun">
+                1. Faça um programa que entre com três números, faca a média aritmética e mostre oresultado.
+            </div>
+            <div class="card">
+                <label for="numero1">Número 1</label>
+                <input type="number" name="numero1" id="" class="n1">
+                <label for="numero2">Número 2</label>
+                <input type="number" name="numero2" id="" class="n2">
+                <label for="numero3">Número 3</label>
+                <input type="number" name="numero3" id="" class="n3">
+                <input type="button" name="result" value="Calcular" onclick="media()">
+                <span>Resultado: <span class="msg"></span></span>
+            </div>
+        </div>
+        <div class="ex">    
+            <div class="enun">
+                2. Faça um programa que entre com o nome e o salário de um funcionário e mostre seu
+                novo salário, sabendo que o mesmo teve um aumento de 10%.
+            </div>
+            <div class="card">
+                <label for="name">Nome: </label>
+                <input type="text" name="name" id="" class="name">
+                <label for="salario">Salário</label>
+                <input type="number" name="salario" id="" class="salario">
+                <input type="button" name="result" value="Calcular" onclick="salario()">
+            </div>
+        </div>
+        <div class="ex">
+            <div class="enun">
+                3. Faça um algoritmo que leia dois valores inteiros A e B se os valores forem iguais devem
+                ser somados os dois, caso contrário multiplique A por B ao final do cálculo ao final do
+                cálculo atribuir o valor para uma variável C.
+            </div>
+            <div class="card">
+                <label for="numero1">Número 1</label>
+                <input type="number" name="numero1" id="" class="n1">
+                <label for="numero2">Número 2</label>
+                <input type="number" name="numero2" id="" class="n2">
+                <input type="button" name="result" value="Calcular" onclick="calcular()">
+            </div>
+        </div>
+        <div class="ex">
+            <div class="enun">
+                4. A partir do preço à vista de um determinado produto, calcule o preço total a pagar e o
+                valor da prestação mensal, referentes ao pagamento parcelado. Se o pagamento for
+                parcelado em 3 vezes deve ser dado um acréscimo de 10% no total a ser pago. Se o
+                parcelamento for em 5 vezes, o acréscimo será de 20%.
+            </div>
+            <div class="card">
+                <label for="preco"></label>
+                <input type="text" name="preco" id="" class="preco" placeholder="Digite o preço do produto">
+                <label for="">Parcelamento: </label>
+                <label for="parcela3"><input type="radio" name="parcela" id="">3 X acrescimo de 10%</label>
+                <label for="parcela5"><input type="radio" name="parcela" id="">5 X acrescimo de 20%</label>
+                <input type="button" name="result" value="Calcular" onclick="parcelar()">
+                <span>Valor da parcela: </span>
+                <span>Valor total: </span>
+            </div>
+        </div>
+        <div class="ex">
+            <div class="enun">
+                5. Faça um algoritmo que leia o nome e as três notas de uma disciplina de um aluno e ao
+                final escreva o nome do aluno, sua média e se ele foi aprovado, sabendo-se que a média
+                para aprovação é igual ou superior a 8.
+            </div>
+            <div class="card">
+                <label for="name">Nome do aluno: </label>
+                <input type="text" class="name" placeholder="Digite o nome do aluno">
+                <label for="nota1">Nota 1</label>
+                <input type="number" name="nota1" id="nota1">
+                <label for="nota2">Nota 2</label>
+                <input type="number" name="nota2" id="nota2">
+                <label for="nota3">Nota 3</label>
+                <input type="number" name="nota3" id="nota3">
+                <input type="button" name="result" value="Calcular" onclick="mediaAluno()">
+                <span>Nota: </span>
+                <span>Situação: </span>
+            </div>
+        </div>
+        <div class="ex">
+            <div class="enun">
+                6. Escreva um algoritmo que receba dois números reais e um código de seleção do usuário.
+                Se o código digitado for 1, faça o algoritmo adicionar os dois números previamente
+                digitados e mostrar o resultado; se o código de seleção for 2, os números deverão ser
+                multiplicados; se o código de seleção for 3, o primeiro número deve ser dividido pelo
+                segundo.
+            </div>
+            <div class="card">
+                <label for="numero1">Número 1</label>
+                <input type="number" name="numero1" id="numero1">
+                <label for="numero2">Número 2</label>
+                <input type="number" name="numero2" id="numero2">
+                <label for="codigo"> Escolha um codigo</label>
+                <select name="codigo">
+                    <option value="" selected>Selecione</option>
+                    <option value="valor1">1 somar</option>
+                    <option value="valor2">2 multiplicar</option>
+                    <option value="valor3">3 dividir</option>
+                </select>
+                <input type="button" name="result" value="Calcular" onclick="calcularCodigo()">
+            </div>
+        </div>
+        <div class="ex">
+            <div class="enun">
+                7. Faça programa que leia uma temperatura em graus Celsius, calcular e escrever o valor
+                correspondente em graus Fahrenheit
+            </div>
+            <div class="card">
+                <label for="grau">Grau: </label>
+                <input type="number" name="grau" id="grau" placeholder="Digite o grau em celsius">
+                <input type="button" name="result" value="Calcular" onclick="grau()">
+                <span>Temperatura em Fahrenheit : <span class="msg"></span> </span>
+            </div>
+        </div>
+        <div class="ex">
+            <div class="enun">
+                8. Faça um programa que leia um número, verifique se este número é positivo ou negativo.
+                Se for negativo mostre a mensagem "Você digitou um numero negativo", Senão
+                mostre:" Você digitou um número positivo.
+            </div>
+            <div class="card">
+                <label for="numero">Numero: </label>
+                <input type="number" name="numero" id="numero" placeholder="Digite um numero">
+                <input type="button" name="result" value="Calcular" onclick="positivo()">
+                <span class="msg"></span>
+            </div>
+        </div>
+        <div class="ex">
+            <div class="enun">
+                9. Faça um programa que leia um número, verifique se este número é positivo, negativo
+                ou Zero. Se for negativo mostre a mensagem "Você digitou um numero negativo", Se
+                for positivo mostre:" Você digitou um número positivo e se for zero mostre: “Você
+                digitou zero”
+            </div>
+            <div class="card">
+                <label for="numero">Numero: </label>
+                <input type="number" name="numero" id="numero" placeholder="Digite um numero">
+                <input type="button" name="result" value="Calcular" onclick="negativo()">
+                <span class="msg"></span>
+            </div>
+        </div>
+        <div class="ex">
+            <div class="enun">
+                10. Faça um programa que leia a idade de um nadador e classifique-o numa das seguintes
+                categorias abaixo:
+                • Adulto (idade >= 18);
+                • Juvenil (idade >= 14);
+                • Infantil (idade >=9);
+                • Mirim (Idade < 9).
+            </div>
+            <div class="card">
+                <label for="idade">Idade: </label>
+                <input type="number" name="idade" id="idade" placeholder="Digite um numero">
+                <input type="button" name="result" value="Calcular" onclick="idade()">
+                <span class="msg"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="lista1.js"></script>
+</body>
+</html>
