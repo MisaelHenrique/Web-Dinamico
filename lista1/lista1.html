@@ -62,11 +62,11 @@
                 <label for="preco"></label>
                 <input type="text" name="preco" id="" class="preco" placeholder="Digite o preço do produto">
                 <label for="">Parcelamento: </label>
-                <label for="parcela3"><input type="radio" name="parcela" id="">3 X acrescimo de 10%</label>
-                <label for="parcela5"><input type="radio" name="parcela" id="">5 X acrescimo de 20%</label>
+                <label for="parcela3"><input type="radio" name="parcela" id="par3">3 X acrescimo de 10%</label>
+                <label for="parcela5"><input type="radio" name="parcela" id="par5">5 X acrescimo de 20%</label>
                 <input type="button" name="result" value="Calcular" onclick="parcelar()">
-                <span>Valor da parcela: </span>
-                <span>Valor total: </span>
+                <span>Valor da parcela: <span id="parcela"></span> </span>
+                <span>Valor total: <span id="total"></span></span>
             </div>
         </div>
         <div class="ex">
@@ -77,7 +77,7 @@
             </div>
             <div class="card">
                 <label for="name">Nome do aluno: </label>
-                <input type="text" class="name" placeholder="Digite o nome do aluno">
+                <input type="text" class="" id="aluno" placeholder="Digite o nome do aluno">
                 <label for="nota1">Nota 1</label>
                 <input type="number" name="nota1" id="nota1">
                 <label for="nota2">Nota 2</label>
@@ -85,8 +85,9 @@
                 <label for="nota3">Nota 3</label>
                 <input type="number" name="nota3" id="nota3">
                 <input type="button" name="result" value="Calcular" onclick="mediaAluno()">
-                <span>Nota: </span>
-                <span>Situação: </span>
+                <span>Nome do aluno: <span id="nome"></span></span>
+                <span>Nota: <span id="media"></span> </span>
+                <span>Situação: <span id="situation"></span> </span>
             </div>
         </div>
         <div class="ex">
@@ -103,11 +104,11 @@
                 <label for="numero2">Número 2</label>
                 <input type="number" name="numero2" id="numero2">
                 <label for="codigo"> Escolha um codigo</label>
-                <select name="codigo">
+                <select name="codigo" id="codigo">
                     <option value="" selected>Selecione</option>
-                    <option value="valor1">1 somar</option>
-                    <option value="valor2">2 multiplicar</option>
-                    <option value="valor3">3 dividir</option>
+                    <option value="1">1 somar</option>
+                    <option value="2">2 multiplicar</option>
+                    <option value="3">3 dividir</option>
                 </select>
                 <input type="button" name="result" value="Calcular" onclick="calcularCodigo()">
             </div>
