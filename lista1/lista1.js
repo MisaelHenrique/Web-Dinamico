@@ -114,9 +114,26 @@ function mediaAluno(){
 //6
 function calcularCodigo(){
 
+    let numero1 = Number(document.querySelector("#numero1").value);
+    let numero2 = Number(document.querySelector("#numero2").value);
     let option = document.querySelector("#codigo");
-
+    let resultado = document.querySelector("#result");
     let opt  = Number(option.value);
+    let result
+
+    if (opt === 1) {
+        
+        result = numero1 + numero2
+
+    }else if(opt === 2) {
+
+        result = numero1 * numero2
+    }else if(opt === 3) {
+
+        result = numero1 / numero2
+    }
+
+    resultado.innerText = result.toFixed(2);
 
 }
 
@@ -124,11 +141,32 @@ function calcularCodigo(){
 //7
 function grau(){
 
+    let grau = Number(document.querySelector("#grau").value);
+    let fahrenheit = document.querySelector("#msg");
+
+    let faren = grau * 1.8 + 32;
+    
+    console.log(faren)
+
+    fahrenheit.innerText = `${faren}ºF`;
+
 }
 
 
 //8
 function positivo(){
+
+    let numero = Number(document.querySelector("#numero").value);
+    msg = document.querySelector("#pos")
+
+    if (numero >= 0) {
+
+        pos.innerText = "POSITIVO"
+        
+    }else{
+
+        pos.innerText = "NEGATIVO"
+    }
 
 }
 
