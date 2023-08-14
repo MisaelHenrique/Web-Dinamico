@@ -156,16 +156,16 @@ function grau(){
 //8
 function positivo(){
 
-    let numero = Number(document.querySelector("#numero").value);
+    let numeroPositivo = Number(document.querySelector("#numero8").value);
     msg = document.querySelector("#pos")
 
-    if (numero >= 0) {
+    if (numeroPositivo>= 0) {
 
-        pos.innerText = "POSITIVO"
+        msg.innerText = "POSITIVO"
         
     }else{
 
-        pos.innerText = "NEGATIVO"
+        msg.innerText = "NEGATIVO"
     }
 
 }
@@ -174,10 +174,44 @@ function positivo(){
 //9
 function negativo(){
 
+    let numeroZero = Number(document.querySelector("#numero9").value);
+    msg9 = document.querySelector("#zero")
+
+    if (numeroZero > 0) {
+
+        msg9.innerText = "POSITIVO"
+        
+    }else if (numeroZero < 0) {
+
+        msg9.innerText = "NEGATIVO"
+
+    }else{
+
+        msg9.innerText = "VOCÊ DIGITOU ZERO"
+    }
+
 }
 
 //10
 function idade(){
+
+    idade = Number(document.querySelector("#idade").value);
+    msg10 = document.querySelector("#msg10")
+
+    if (idade < 9) {
+
+        msg10.innerText = "MIRIM"
+    }else if (idade > 9 && idade < 14) {
+
+        msg10.innerText = "INFANTIL"
+    }else if (idade >= 14 && idade < 18) {
+
+        msg10.innerText = "JUVENIL"
+    }else{
+
+        msg10.innerText = "ADULTO"
+    }
+
 
 }
 
