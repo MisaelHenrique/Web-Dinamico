@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Aula 04 DOM</title>
+</head>
+<body>
+    <div id="container" onmouseover="alteraTexto()">
+
+        <p class="text">Lorem ipsum dolor sit.</p>
+
+        <span class="text">Lorem ipsum dolor sit amet.</span>
+
+        <p name="text-name">Lorem ipsum dolor sit.</p>
+
+    </div>
+
+    <script>
+
+        const div = document.querySelector('#container');
+        // console.log(div)
+        // div.style.background = '#3f3';
+        // div.style.border = '2px solid red';
+        // div.style.boxShadow = '0 5px 1px rgba(0, 0, 0, 0.2)';
+
+        div.classList.add('bgColor');
+        
+        const text = document.getElementsByClassName('.text');
+        console.log(text)
+
+        text[0].classList.add('blue')
+
+        const name = document.getElementsByName('text-name');
+        console.log(name[0])
+
+        const p = document.getElementsByTagName('p');
+        console.log(p)
+
+        const q = document.querySelector('#container>span');//direcionado à acessar um caminho
+        console.log(q)
+    </script>
+
+</body>
+
+<script src="index.js"></script>
+</html>

@@ -1,0 +1,12 @@
+.bgColor{
+    background: #3f3;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    border: 1px solid red;
+    padding: 5px;
+}
+
+.blue{
+    color: blue;
+    font-size: 18px; 
+}
