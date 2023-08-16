@@ -1,0 +1,7 @@
+.ex{
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid black 1px;
+    padding: 5px;
+    gap: 10px;
+}
